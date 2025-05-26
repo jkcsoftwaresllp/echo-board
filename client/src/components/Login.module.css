@@ -1,0 +1,183 @@
+/* Base layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+  background-color: white;
+  flex-direction: column;
+}
+
+.logoContainer {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+   padding: 0;
+  margin: 0; 
+  z-index: 3;
+}
+
+.logo {
+  height:7rem;
+  width: auto;
+}
+
+.formSection {
+  position: relative;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.formContainer {
+  position: relative;
+  background: white;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  z-index: 1;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  background: #e5e7eb;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+  color: #374151;
+   width: 20px;
+  height: 20px;
+  margin-right: 0.75rem;
+}
+
+.input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.forgot {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.forgot a {
+  color: #111827;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+
+.buttonContainer {
+  width: 100%;
+}
+
+.button {
+ background-color: #38a169;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 50%; /*  Make it half width */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;         /* Ensures centering works */
+  margin: 0 auto;         /* Center horizontally */
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #2f855a;
+}
+
+.imageSection {
+  display: none;
+}
+
+.loginImage {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+
+.curve {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(to bottom right, #2f855a, #68d391);
+  border-bottom-left-radius: 60% 20%;
+  border-bottom-right-radius: 60% 20%;
+  z-index: 0;
+}
+/* Large screens */
+@media (min-width: 768px) {
+  .wrapper {
+    flex-direction: row;
+    overflow-x: hidden;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  .curve {
+    display: none;
+  }
+
+  .logoContainer {
+    display: block;
+    padding: 0;
+  }
+
+  .formSection {
+    width: 50%;
+    background: linear-gradient(to bottom, #d1fae5, #bfdbfe);
+    padding: 100px 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .formContainer {
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .imageSection {
+    display: block;
+    width: 50%;
+  }
+}
