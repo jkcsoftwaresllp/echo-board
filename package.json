@@ -1,0 +1,25 @@
+{
+  "name": "echo-board",
+  "version": "1.0.0",
+  "description": "Organizations and teams need a reliable and easy-to-use system to collect, store, and manage feedback from users or employees about products, services, or internal tools. In the absence of such a system, valuable insights often get lost or ignored, leading to missed opportunities for improvement.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkcsoftwaresllp/echo-board.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jkcsoftwaresllp/echo-board/issues"
+  },
+  "homepage": "https://github.com/jkcsoftwaresllp/echo-board#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.1"
+  }
+}
