@@ -993,3 +993,104 @@ body {
           }
         }
       
+        /*------------------------- AdminDashboard------------------- */
+
+        .dashboard-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f8fff8;
+  border-radius: 12px;
+}
+
+.dashboard-title-box {
+  background: linear-gradient(to right, #e8fce8, #deeefc);
+  padding: 20px;
+  text-align: center;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1e4d2b;
+}
+
+.feedback-card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.feedback-card.hidden {
+  opacity: 0.5;
+}
+
+.feedback-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feedback-date {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 5px;
+}
+
+.ratings-summary {
+  display: flex;
+  gap: 30px;
+  margin: 15px 0;
+  font-weight: 500;
+}
+
+.overall-rating {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.feedback-message {
+  font-style: italic;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.dashboard-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.hide-btn,
+.delete-btn {
+  padding: 8px 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.hide-btn {
+  background-color: #ffd95b;
+  color: black;
+}
+
+.delete-btn {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.hide-btn:hover {
+  background-color: #f1c232;
+}
+
+.delete-btn:hover {
+  background-color: #d94747;
+}

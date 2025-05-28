@@ -1,6 +1,6 @@
 
 import "./UserDashboard.css";
-import logo from "../assets/images/logo.jpeg";
+// import logo from "../assets/images/logo.jpeg";
 import logo2 from "../assets/images/logo2.png";
 import logo3 from "../assets/images/logo3.jpeg";
 import loginImage from "../assets/images/adminLogin2.png";
